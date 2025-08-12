@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Section</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<style>
+  .about-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .about-section img {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px;
+    border-radius: 50%; /* Makes the image round */
+    margin-bottom: 20px;
+  }
+  .about-section p {
+    color: #333;
+  }
+
+  /* Additional CSS for Projects Section */
+.projects-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.card {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
+}
+.card-img-top {
+  max-height: 180px; /* Adjust this value to fit the image properly in the card */
+  object-fit: cover; /* This makes sure the image covers the area properly */
+}
+.card-body {
+  padding: 15px;
+}
+.card-title {
+  font-size: 1.25rem;
+}
+.card-text {
+  margin-bottom: 15px;
+}
+
+/* Additional CSS for Skills Section */
+.skills-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.skills-section .card {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.skills-section .card-img-top {
+  padding: 20px; /* Add padding around your images if needed */
+  background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
+  height: 180px; /* Fixed height for consistency */
+  object-fit: contain; /* This will make sure the image is scaled properly within the container */
+}
+.skills-section .card-body {
+  padding: 15px;
+}
+.skills-section .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+.skills-section .btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+.skills-section .btn-outline-primary:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Additional CSS for Contact Section */
+.contact-section {
+  padding: 50px 0;
+}
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.social-icon {
+  width: 50px; /* Size of your icons */
+  margin-bottom: 10px;
+}
+/* Hover effect for icons */
+.social-icon:hover {
+  opacity: 0.7;
+}
+/* Style for links in the Contact section */
+.contact-section a {
+  color: #fff;
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Allows for margin on the bottom */
+  margin-bottom: 10px;
+}
+.contact-section a:hover {
+  color: #ddd; /* Color when hovering over the link */
+}
+
+/* CSS for Sticky Navbar */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
+}
+
+/* Ensure padding is added to body to avoid content being hidden behind the navbar */
+body { 
+  padding-top: 56px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style for navigation bar links */
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Slightly lighter white when hovering over links */
+}
+
+/* Media query for responsive navbar collapsing */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #343a40; /* Same as navbar color for seamless look */
+  }
+}
+
+
+</style>
+
+</head>
+<body>
+
+<section id='about' class="about-section">
+  <div class="container">
+    <h2>About</h2>
+    <img src="images/about/pfp.png" alt="About Me">
+    <p>My name is Ayan Amir, and I am a third year computer science student at Western University.</p>
+    <p>Currently looking for Fall 2025, Winter & Summer 2026 opportunities!</p>
+  </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section bg-light" id="projects">
+  <div class="container">
+    <h2 class="text-center">Projects</h2>
+    <div class="row">
+      <!-- Project 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/spacex.jpg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Falcon 9 First Stage Landing Predictor</h5>
+            <p class="card-text">A machine-learning model that forecasts whether SpaceX’s Falcon 9 first stage will land successfully using publicly available launch data, helping streamline mission planning and cost estimation. • Python • Pandas • NumPy • Scikit-learn • Matplotlib • Folium • SQL</p>
+            <a href="https://github.com/ayanamir174/Falcon-9-First-Stage-Landing-Predictor" target="_blank" class="btn btn-primary">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/prem.avif" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Premier League Match Predictor</h5>
+            <p class="card-text">A predictive model that forecasts outcomes of Premier League matches using historical match data and machine learning, helping analyze match results based on performance trends. • Python • Pandas • NumPy • Scikit-learn</p>
+            <a href="https://github.com/ayanamir174/Premier-League-Match-Predictor" target="_blank" class="btn btn-primary">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/BeeColony.webp" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Interactive Dashboard of Bee Colonies</h5>
+            <p class="card-text">An interactive web dashboard that visualizes the percentage of U.S. bee colonies affected by Varroa mites, featuring a year-selectable choropleth map with responsive hover tooltips and built for data-driven insights. • Python • Pandas • Plotly • Dash </p>
+            <a href="https://github.com/ayanamir174/Interactive-Dashboard-of-Bee-Colonies" target="_blank" class="btn btn-primary">Source Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section bg-white" id="skills">
+  <div class="container">
+    <h2 class="text-center">Skills</h2>
+    <div class="row">
+      <!-- Skill 1 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/ibmds.png" class="card-img-top" alt="Python">
+          <div class="card-body">
+            <h5 class="card-title">IBM Data Science Professional</h5>
+            <p class="card-text">Completed IBM’s Data Science Professional Certificate on Coursera, covering data analysis, visualization, SQL, Python programming, and applied machine learning projects.</p>
+            <a href="https://www.coursera.org/account/accomplishments/professional-cert/04MT2VOXV056" target="_blank" class="btn btn-outline-primary">Link to course</a>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 2 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/python.svg.png" class="card-img-top" alt="Data Visualization">
+          <div class="card-body">
+            <h5 class="card-title">Python</h5>
+            <p class="card-text">Proficient in Python for data analysis, visualization, automation, and machine learning, using libraries such as Pandas, NumPy, Matplotlib, and Scikit-learn.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 3 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/sql.png" class="card-img-top" alt="SQL">
+          <div class="card-body">
+            <h5 class="card-title">SQL</h5>
+            <p class="card-text">Skilled in writing SQL queries to extract, analyze, and manage data from relational databases for reporting and insights.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 4 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/r.svg" class="card-img-top" alt="Data Storytelling">
+          <div class="card-body">
+            <h5 class="card-title">R</h5>
+            <p class="card-text">Experienced in R for statistical analysis, data visualization, and predictive modeling, leveraging packages like ggplot2 and dplyr.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Me Section -->
+<section id="contact" class="contact-section text-center text-white bg-dark">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <div class="row">
+      <div class="col-lg-6">
+        <p><i class="fas fa-envelope"></i>ayanamir174@gmail.com</p>
+      </div>
+      <div class="col-lg-6">
+        <p><i class="fas fa-phone"></i> 647-615-9984</p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-auto mb-4">
+          <a href="https://www.linkedin.com/in/ayan-amir-42867831a/" target="_blank">
+            <img src="icons/linkedin.svg.png" alt="LinkedIn" class="social-icon">
+            LinkedIn
+          </a>
+        </div>
+        <div class="col-auto mb-4">
+          <a href="https://github.com/ayanamir174" target="_blank">
+            <img src="icons/github.jpeg" alt="GitHub" class="social-icon">
+            GitHub
+          </a>
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- Sticky Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Bootstrap JS and dependencies (jQuery and Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+  
+  
